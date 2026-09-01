@@ -374,7 +374,16 @@ body {
   color: #8a8894;
   font-family: "Inconsolata", monospace;
 }
-.moodboard-container > .visuals-column:nth-of-type(2) {
+
+/* Colonne UI (gauche) – reste en colonne */
+.moodboard-container > .visuals-column:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Colonne INSPIRATION (droite) – grille 3 colonnes × 2 rangées */
+.moodboard-container > .visuals-column:nth-of-type(4) {
   display: grid !important;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
